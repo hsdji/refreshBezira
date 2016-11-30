@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="naviView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2L-7L-s7E">
+                    <rect key="frame" x="10" y="7" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="zheshilab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSv-5E-IIm">
+                    <rect key="frame" x="248" y="12" width="73" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-uw-tVq">
+                    <rect key="frame" x="534" y="7" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="c2L-7L-s7E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="2W9-Cz-PYF"/>
+                <constraint firstItem="c2L-7L-s7E" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9bd-0g-rQo"/>
+                <constraint firstItem="iSv-5E-IIm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IPx-cY-ar2"/>
+                <constraint firstItem="iSv-5E-IIm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NkQ-BA-o2F"/>
+                <constraint firstAttribute="trailing" secondItem="Pfz-uw-tVq" secondAttribute="trailing" constant="20" id="UZi-ZF-J95"/>
+                <constraint firstItem="Pfz-uw-tVq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sQB-pw-n19"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="back" destination="c2L-7L-s7E" id="DtG-6b-9bR"/>
+                <outlet property="right" destination="Pfz-uw-tVq" id="nfs-gA-bjy"/>
+                <outlet property="title" destination="iSv-5E-IIm" id="rrL-tB-0YC"/>
+            </connections>
+            <point key="canvasLocation" x="596" y="463"/>
+        </view>
+    </objects>
+</document>
